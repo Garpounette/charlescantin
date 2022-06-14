@@ -1,0 +1,9 @@
+@mixin circle($size)
+    width: $size
+    height: $size
+    border-radius: 100%
+
+// Gestion des breakpoint en fonction de la taille d'écran
+@mixin min-break-point($size)
+  @media screen and (min-width: $size)
+    @content

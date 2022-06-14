@@ -1,0 +1,145 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+/* Couleurs : */
+/* Breakpoints (équivalent aux breakpoints Bootstrap) */
+/* Typo */
+/* Tailles */
+body {
+  background-color: #EEEEEE;
+  font-family: "Nova Mono", monospace;
+}
+
+.flux {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MyNavBar {
+  font-family: "Cookie", cursive;
+  font-size: 30px;
+}
+
+.MyNavBar .MyNavBar__link {
+  color: #EEEEEE;
+  text-shadow: #47555e 1px 1px 1px;
+  margin-left: 2px;
+  margin-right: 2px;
+  letter-spacing: .15rem;
+}
+
+.MyNavBar .MyNavBar__link:first-child {
+  margin-left: 0;
+}
+
+.MyNavBar .MyNavBar__link:last-child {
+  margin-right: 0;
+}
+
+.MyCarousel {
+  text-align: center;
+}
+
+.MyCarousel .MyCarousel__image {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.MyLogo__container {
+  position: relative;
+  margin-top: 20%;
+  z-index: 1;
+  background-color: rgba(71, 85, 94, 0.7);
+  color: #EEEEEE;
+  -webkit-box-shadow: black 3px 3px 8px;
+          box-shadow: black 3px 3px 8px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .MyLogo__container {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .MyLogo__container {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+  }
+}
+
+.MyLogo__container .MyLogo__logo {
+  position: relative;
+  margin: auto;
+  padding-top: 10%;
+  width: 85%;
+}
+
+@media screen and (min-width: 992px) {
+  .MyLogo__container .MyLogo__logo {
+    width: 95%;
+  }
+}
+
+.MyLogo__container .MyLogo__title {
+  position: relative;
+  font-family: "Cookie", cursive;
+  font-size: 0.9rem;
+  text-shadow: #47555e 1px 1px 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .MyLogo__container .MyLogo__title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .MyLogo__container .MyLogo__title {
+    font-size: 1.7rem;
+  }
+}
+
+.MyLogo__container .MyLogo__subtitle {
+  font-size: 1.2rem;
+  text-shadow: #47555e 1px 1px 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .MyLogo__container .MyLogo__subtitle {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .MyLogo__container .MyLogo__subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+.home__link {
+  position: relative;
+  z-index: 1;
+}
+
+.home__link .home__image {
+  width: 20%;
+  z-index: 5;
+}
+/*# sourceMappingURL=Index.css.map */

@@ -1,0 +1,39 @@
+.MyLogo__container
+  position: relative
+  margin-top: 20%
+  z-index: 1
+  background-color: $darkTransparent
+  color: $light
+  box-shadow: black 3px 3px 8px 
+  +circle(100px)
+  +min-break-point($md)
+    +circle(150px)
+  +min-break-point($lg)
+    +circle(250px)
+
+  .MyLogo__logo
+    position: relative
+    margin: auto
+    padding-top: 10%
+    width: 85%
+    +min-break-point($lg)
+      width: 95%
+
+  .MyLogo__title
+    position: relative
+    font-family: $menuFont
+    font-size: 0.9rem
+    text-shadow: $dark 1px 1px 1px 
+    +min-break-point($md)
+      font-size: 1.2rem
+    +min-break-point($lg)
+      font-size: 1.7rem
+    
+    
+  .MyLogo__subtitle
+    font-size: 1.2rem
+    text-shadow: $dark 1px 1px 1px 
+    +min-break-point($md)
+      font-size: 1.7rem
+    +min-break-point($lg)
+      font-size: 2.5rem
