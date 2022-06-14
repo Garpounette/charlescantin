@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function MyLink() {
   return (
-    <div className="MyLink flux my-5 d-flex justify-content-around">
+    <div className="MyLink flux my-5 d-flex justify-content-around" id="link">
       <Link className="MyLink__link" to="/galery">
         <img className="MyLink__image" src={galery} alt="Bébé studieux" />
         <span className="MyLink__title">Galerie</span>

@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <MyNavBar page={currentPage} />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/galery" element={<Galery />} />
