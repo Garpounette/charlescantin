@@ -7,7 +7,7 @@ function MyFooter() {
   return (
     <div className="MyFooter flux pb-2">
       <div className="MyFooter__social pt-4 pb-2">
-        <img src={facebook} alt="logo facebook" /> - <img src={instagram} alt="logo instagram" />
+        <img src={facebook} alt="logo facebook" /> <img src={instagram} alt="logo instagram" />
       </div>
       <div className="MyFooter__logo pt-2 pb-2">
         <img src={logo} alt="" />

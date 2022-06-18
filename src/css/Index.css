@@ -30,6 +30,34 @@ body {
   background-color: #EEEEEE;
 }
 
+.NavMargin {
+  margin-top: 63px;
+}
+
+@media screen and (min-width: 768px) {
+  .NavMargin {
+    margin-top: 73px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .NavMargin {
+    margin-top: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .NavMargin {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .NavMargin {
+    margin-top: 105px;
+  }
+}
+
 .MyNavBar {
   position: absolute;
   top: 0;
@@ -239,14 +267,13 @@ body {
 }
 
 .MyCategories {
-  margin-top: 105px;
-  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 15px;
 }
 
 .MyCategories .breadcrumb .breadcrumb-item {
@@ -259,5 +286,60 @@ body {
 
 .MyCategories .breadcrumb .active {
   color: #afbbc2;
+}
+
+.MyImageItem {
+  margin: 10px;
+  margin-position: relative;
+}
+
+.MyImageItem:hover:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  margin: -15px 0 0 -15px;
+  background: url("../assets/logos/loupe.png") center no-repeat;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.MyImageItem__image {
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.MyImageItem__image:hover {
+  -webkit-box-shadow: 1px 1px 3px #47555e;
+          box-shadow: 1px 1px 3px #47555e;
+}
+
+.MyImageList {
+  width: 100%;
+}
+
+.MyImageList .MyImageList__list {
+  list-style-type: none;
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+}
+
+.MyImageList .MyImageList__list div {
+  position: relative;
 }
 /*# sourceMappingURL=Index.css.map */
