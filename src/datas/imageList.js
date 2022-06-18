@@ -12,6 +12,8 @@ import family2 from "../assets/images/family2.jpg";
 import heart from "../assets/images/heart.jpg";
 import pregnant1 from "../assets/images/pregnant1.jpg";
 import pregnant2 from "../assets/images/pregnant2.jpg";
+import fashion from "../assets/images/fashion.jpg";
+import woman from "../assets/images/woman.jpg";
 
 export const imageList = [
   {
@@ -97,5 +99,17 @@ export const imageList = [
     category: "Grossesse",
     id: "14iy",
     img: pregnant2,
+  },
+  {
+    name: "fashion",
+    category: "Portrait",
+    id: "15re",
+    img: fashion,
+  },
+  {
+    name: "woman",
+    category: "Portrait",
+    id: "16uc",
+    img: woman,
   },
 ];
