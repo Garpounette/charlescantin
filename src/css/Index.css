@@ -237,4 +237,27 @@ body {
   text-shadow: black 1px 1px 1px;
   border-radius: 5px;
 }
+
+.MyCategories {
+  margin-top: 105px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.MyCategories .breadcrumb .breadcrumb-item {
+  cursor: pointer;
+}
+
+.MyCategories .breadcrumb li:hover {
+  text-decoration: underline;
+}
+
+.MyCategories .breadcrumb .active {
+  color: #afbbc2;
+}
 /*# sourceMappingURL=Index.css.map */
