@@ -8,12 +8,21 @@
     .MyLink__image
       position: relative
       margin: auto
-      width: 95%  
-      height: 95%
+      width: 90%  
+      height: 90%
 
     .MyLink__title
       position: relative
-      top: -15%
-      font-size: 1.7rem
+      top: -30%
+      font-size: 0.7rem
       color: $light
       text-shadow: $black 1px 1px 1px 
+      +min-break-point($sm)
+        top: -25%
+        font-size: 0.9rem
+      +min-break-point($md)
+        top: -20%
+        font-size: 1.2rem
+      +min-break-point($lg)
+        top: -20%
+        font-size: 1.7rem

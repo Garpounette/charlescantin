@@ -1,6 +1,13 @@
 .MyNavBar
+  position: absolute
+  top: 0
+  left: 0 
+  right: 0
+  z-index: 2
   font-family: $menuFont
   font-size: 30px
+  background-color: $transparent
+  font-size: $menuSize
   
   .MyNavBar__link
     color: $light
@@ -14,4 +21,16 @@
 
     &:last-child 
       margin-right: 0
-      
+
+  .MyNavBar__brand
+    background-color: $dark
+    width: 12%
+    & img
+      width: 100%
+
+
+.darkNavBar
+  background-color: $light
+  color: $dark      
+  border-bottom: $dark solid 1px
+  box-shadow: 0px 1px 1px darken($dark,20%)

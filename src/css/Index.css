@@ -9,13 +9,17 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: initial;
+}
+
 /* Couleurs : */
 /* Breakpoints (équivalent aux breakpoints Bootstrap) */
 /* Typo */
 /* Tailles */
 body {
-  background-color: #EEEEEE;
   font-family: "Nova Mono", monospace;
+  font-size: 18px;
 }
 
 .flux {
@@ -23,11 +27,19 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #EEEEEE;
 }
 
 .MyNavBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   font-family: "Cookie", cursive;
   font-size: 30px;
+  background-color: #1fe0;
+  font-size: 40px;
 }
 
 .MyNavBar .MyNavBar__link {
@@ -44,6 +56,23 @@ body {
 
 .MyNavBar .MyNavBar__link:last-child {
   margin-right: 0;
+}
+
+.MyNavBar .MyNavBar__brand {
+  background-color: #47555e;
+  width: 12%;
+}
+
+.MyNavBar .MyNavBar__brand img {
+  width: 100%;
+}
+
+.darkNavBar {
+  background-color: #EEEEEE;
+  color: #47555e;
+  border-bottom: #47555e solid 1px;
+  -webkit-box-shadow: 0px 1px 1px #1b2024;
+          box-shadow: 0px 1px 1px #1b2024;
 }
 
 .MyCarousel {
@@ -145,15 +174,67 @@ body {
 .MyLink .MyLink__link .MyLink__image {
   position: relative;
   margin: auto;
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 90%;
 }
 
 .MyLink .MyLink__link .MyLink__title {
   position: relative;
-  top: -15%;
-  font-size: 1.7rem;
+  top: -30%;
+  font-size: 0.7rem;
   color: #EEEEEE;
   text-shadow: #000 1px 1px 1px;
+}
+
+@media screen and (min-width: 576px) {
+  .MyLink .MyLink__link .MyLink__title {
+    top: -25%;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .MyLink .MyLink__link .MyLink__title {
+    top: -20%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .MyLink .MyLink__link .MyLink__title {
+    top: -20%;
+    font-size: 1.7rem;
+  }
+}
+
+.MyFooter {
+  background-color: #47555e;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.MyFooter .MyFooter__social {
+  background-color: #EEEEEE;
+  color: #47555e;
+}
+
+.MyFooter .MyFooter__social img {
+  width: 32px;
+  height: 32px;
+}
+
+.MyFooter .MyFooter__logo img {
+  width: 12%;
+}
+
+.MyFooter .MyFooter__link {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+.MyFooter .MyFooter__link:hover {
+  color: #d5d5d5;
+  text-shadow: black 1px 1px 1px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=Index.css.map */
