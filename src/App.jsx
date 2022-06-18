@@ -8,6 +8,7 @@ import Condition from "pages/Condition";
 
 import MyNavBar from "./components/MyNavBar";
 import MyFooter from "components/MyFooter";
+import ScrollToTop from "components/ScrollToTop";
 
 function App() {
   const currentPage = useLocation().pathname;
@@ -17,14 +18,16 @@ function App() {
         <MyNavBar page={currentPage} />
       </header>
       <main className="flux">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/galery" element={<Galery />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/condition" element={<Condition />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/galery" element={<Galery />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/condition" element={<Condition />} />
+          </Routes>
+        </ScrollToTop>
       </main>
       <footer>
         <MyFooter />
