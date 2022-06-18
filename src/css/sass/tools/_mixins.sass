@@ -7,3 +7,18 @@
 @mixin min-break-point($size)
   @media screen and (min-width: $size)
     @content
+
+@mixin keyframes($animationName) 
+  @-webkit-keyframes #{$animationName} 
+    $browser: '-webkit-' 
+    @content
+  @-moz-keyframes #{$animationName} 
+    $browser: '-moz-'
+    @content
+  @-o-keyframes #{$animationName}
+    $browser: '-o-'
+    @content
+  @keyframes #{$animationName} 
+    $browser: ''
+    @content
+$browser: null

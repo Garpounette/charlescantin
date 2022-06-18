@@ -1,10 +1,11 @@
-function MyImageItem({ id, name, img, category }) {
+function MyImageItem({ name, img, setModalImageSrc, setModalIsActive }) {
   function handleClick() {
-    alert(`Vous voulez acheter 1 ? Très bon choix 🌱✨`);
+    setModalIsActive(true);
+    setModalImageSrc(img);
   }
 
   return (
-    <li className="MyImageItem" key={id} onClick={() => handleClick()}>
+    <li className="MyImageItem" onClick={() => handleClick()}>
       <img className="MyImageItem__image" src={img} alt={`${name}`} width="50%" />
     </li>
   );
