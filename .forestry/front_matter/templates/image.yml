@@ -1,4 +1,22 @@
 ---
 label: Image
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Nom
+  description: Nom de la photo
+- name: category
+  type: text
+  config:
+    required: false
+  label: Categorie
+  description: Catégorie de photo
+- name: file
+  type: text
+  config:
+    required: false
+  label: Fichier
+  description: Nom du fichier
