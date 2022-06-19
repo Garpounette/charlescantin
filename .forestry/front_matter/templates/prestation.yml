@@ -38,15 +38,6 @@ fields:
       format: markdown
   label: Commentaire
   description: Commentaire suplémentaire
-- name: id
-  type: text
-  config:
-    required: true
-    min: 4
-    max: 4
-  label: ID
-  description: id de la prestation
-  hidden: true
 pages:
 - public/justemoi.md
 - public/services/justemoi.md
