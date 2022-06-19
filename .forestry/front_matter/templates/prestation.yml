@@ -38,6 +38,3 @@ fields:
       format: markdown
   label: Commentaire
   description: Commentaire suplémentaire
-pages:
-- public/justemoi.md
-- public/services/justemoi.md

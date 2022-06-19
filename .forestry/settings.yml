@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: public/services
   label: Prestations
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - prestation
