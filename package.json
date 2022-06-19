@@ -1,5 +1,6 @@
 {
   "name": "charlescantin",
+  "homepage": "http://charlescantin.localhost/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
