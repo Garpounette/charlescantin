@@ -14,7 +14,7 @@ sections:
   label: Services
   create: documents
   match: "**/*"
-upload_dir: build/static/media
+upload_dir: src/assets/images
 public_path: "/static/media"
 front_matter_path: ''
 use_front_matter_path: false
