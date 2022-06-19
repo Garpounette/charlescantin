@@ -20,3 +20,5 @@ fields:
     required: false
   label: Fichier
   description: Nom du fichier
+pages:
+- src/datas/images/baby1.md
