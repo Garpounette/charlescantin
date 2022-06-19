@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: build/images
-  label: Images
-  match: "**/*"
 - type: directory
   path: build/services
   label: Prestations
@@ -15,6 +11,9 @@ sections:
   match: "**/*"
   templates:
   - prestation
+- type: document
+  path: build/images
+  label: Images
 upload_dir: build/static/media
 public_path: "/static/media"
 front_matter_path: ''
