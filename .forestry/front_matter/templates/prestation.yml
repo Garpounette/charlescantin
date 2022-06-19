@@ -38,3 +38,5 @@ fields:
       format: markdown
   label: Commentaire
   description: Commentaires additionnels
+pages:
+- src/datas/services/pourdeux.md
