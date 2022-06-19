@@ -6,7 +6,7 @@ function MyServiceList() {
     <div className="MyServiceList row">
       {serviceList.map(({ id, name, price, description, commentaire }) => (
         <MyServiceCard
-          id={id}
+          key={id}
           name={name}
           price={price}
           description={description}

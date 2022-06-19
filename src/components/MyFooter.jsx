@@ -4,10 +4,16 @@ import instagram from "../assets/logos/instagram.png";
 import { Link } from "react-router-dom";
 
 function MyFooter() {
+  //TODO : Liens sociaux + liens footer (politique + cgv)
   return (
     <div className="MyFooter flux pb-2">
       <div className="MyFooter__social pt-4 pb-2">
-        <img src={facebook} alt="logo facebook" /> <img src={instagram} alt="logo instagram" />
+        <a href="https://www.facebook.com" target="_blank">
+          <img src={facebook} alt="logo facebook" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src={instagram} alt="logo instagram" />
+        </a>
       </div>
       <div className="MyFooter__logo pt-2 pb-2">
         <img src={logo} alt="" />

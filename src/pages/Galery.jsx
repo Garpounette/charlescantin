@@ -1,4 +1,3 @@
-import { useState } from "react";
 import MyImageList from "components/MyImageList";
 
 function Galery() {

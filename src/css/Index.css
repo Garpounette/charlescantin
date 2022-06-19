@@ -462,4 +462,29 @@ body {
   font-size: smaller;
   color: #687c8a;
 }
+
+.MyForm {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.MyForm .MyForm__group {
+  width: 46%;
+}
+
+.MyForm .MyForm__group-message {
+  width: 95%;
+}
+
+.MyForm .MyForm__button {
+  background-color: #47555e;
+  color: #EEEEEE;
+  border: 0;
+  width: 20%;
+}
 /*# sourceMappingURL=Index.css.map */

@@ -1,7 +1,9 @@
+import MyForm from "components/MyForm";
+
 function Contact() {
   return (
     <div className="Contact NavMargin">
-      <h1>Contact</h1>
+      <MyForm />
     </div>
   );
 }
