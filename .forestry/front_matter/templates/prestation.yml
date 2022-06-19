@@ -41,5 +41,6 @@ fields:
 pages:
 - src/datas/services/famille.md
 - src/datas/services/iletaitunefois.md
+- src/datas/services/immortalise.md
 - src/datas/services/monbebe.md
 - src/datas/services/pourdeux.md
