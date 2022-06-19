@@ -2,7 +2,7 @@ import MyImageList from "components/MyImageList";
 
 function Galery() {
   return (
-    <div className="Galery NavMargin">
+    <div className="NavMargin">
       <MyImageList />
     </div>
   );

@@ -1,8 +1,9 @@
-function Condition() {
+import MyCondition from "components/MyCondition";
+function Condition({ name, city }) {
   return (
-    <>
-      <h1>Condition</h1>
-    </>
+    <div className="NavMargin">
+      <MyCondition name={name} city={city} />
+    </div>
   );
 }
 

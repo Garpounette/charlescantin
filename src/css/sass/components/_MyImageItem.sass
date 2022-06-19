@@ -18,10 +18,13 @@
   padding: 20px
 
 .MyImageItem__image  
-  height: 250px
-  width: 250px
+  height: auto
+  width: 100%
   border-radius: 5px
   object-fit: cover
+  +min-break-point($lg)
+    height: 250px
+    width: 250px
 
   &:hover
     box-shadow: 1px 1px 3px $dark

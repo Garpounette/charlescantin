@@ -22,13 +22,15 @@ export const serviceList = [
     name: "Il était une fois",
     price: 160,
     id: "04gv",
-    description: "Photo de grossesse (À votre domicile, en extérieur ou en studio)",
+    description: "Photo de grossesse",
+    commentaire: "À votre domicile, en extérieur ou en studio",
   },
   {
     name: "Mon bébé",
     price: "100",
     id: "05uy",
-    description: "Photo d’enfant jusqu’à 3 ans (photo à domicile)",
+    description: "Photo d’enfant jusqu’à 3 ans",
+    commentaire: "photo à domicile",
   },
   {
     name: "J’immortalise l’événement",

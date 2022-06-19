@@ -1,8 +1,10 @@
-function Privacy() {
+import MyPrivacy from "components/MyPrivacy";
+
+function Privacy({ name, url, uri }) {
   return (
-    <>
-      <h1>Privacy</h1>
-    </>
+    <div className="NavMargin">
+      <MyPrivacy name={name} url={url} uri={uri} />
+    </div>
   );
 }
 

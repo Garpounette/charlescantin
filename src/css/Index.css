@@ -66,6 +66,11 @@ body {
   font-size: 18px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Hind Vadodara", sans-serif;
+  font-size: 25px;
+}
+
 .flux {
   width: 100%;
   max-width: 1200px;
@@ -75,7 +80,7 @@ body {
 }
 
 .NavMargin {
-  margin-top: 63px;
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -246,8 +251,8 @@ body {
 .MyLink .MyLink__link .MyLink__image {
   position: relative;
   margin: auto;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .MyLink .MyLink__link .MyLink__title {
@@ -307,7 +312,6 @@ body {
 .MyFooter .MyFooter__link:hover {
   color: #d5d5d5;
   text-shadow: black 1px 1px 1px;
-  border-radius: 5px;
 }
 
 .MyCategories {
@@ -353,11 +357,18 @@ body {
 }
 
 .MyImageItem__image {
-  height: 250px;
-  width: 250px;
+  height: auto;
+  width: 100%;
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .MyImageItem__image {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 .MyImageItem__image:hover {
@@ -389,15 +400,16 @@ body {
 }
 
 .ModalActive {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   z-index: 99;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: none;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -409,7 +421,15 @@ body {
 @-webkit-keyframes zoom-out 0.6s linear {}@keyframes zoom-out 0.6s linear {}.MyImageModal__image {
   margin: auto;
   display: block;
-  width: 75%;
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .MyImageModal__image {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .MyServiceList {
@@ -463,6 +483,11 @@ body {
   color: #687c8a;
 }
 
+.MyServiceCard__small {
+  font-size: 16px;
+  font-style: italic;
+}
+
 .MyForm {
   padding-top: 20px;
   display: -webkit-box;
@@ -486,5 +511,73 @@ body {
   color: #EEEEEE;
   border: 0;
   width: 20%;
+}
+
+.MyPrivacy {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 5px;
+}
+
+.MyPrivacy h1, .MyPrivacy h2 {
+  color: black;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.MyPrivacy h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.MyPrivacy p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.MyPrivacy ul {
+  padding-left: 45px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.MyCondition {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 5px;
+}
+
+.MyCondition h1, .MyCondition h2 {
+  color: black;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.MyCondition h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.MyCondition h2 {
+  border-top: 1px #47555e solid;
+  padding-top: 20px;
+}
+
+.MyCondition h3 {
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.MyCondition p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.MyCondition ul {
+  padding-left: 45px;
+  padding-right: 20px;
+  text-align: justify;
 }
 /*# sourceMappingURL=Index.css.map */

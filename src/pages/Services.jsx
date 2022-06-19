@@ -2,7 +2,7 @@ import MyServiceList from "components/MyServiceList";
 
 function Services() {
   return (
-    <div className="Services NavMargin">
+    <div className="NavMargin">
       <MyServiceList />
     </div>
   );

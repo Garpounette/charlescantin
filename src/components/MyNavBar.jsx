@@ -7,28 +7,28 @@ import logo from "../assets/logo-remove-bg.png";
 function MyNavBar({ page }) {
   const darkNavBar = page !== "/" ? "darkNavBar" : null;
   return (
-    <Navbar expand="lg" className={"MyNavBar flux " + darkNavBar}>
-      <Container>
+    <Navbar collapseOnSelect expand="lg" className={"MyNavBar flux " + darkNavBar}>
+      <Container className={`${page === "/" ? "justify-content-end" : ""}`}>
         {page !== "/" && (
-          <Link to="/" className="navbar-brand MyNavBar__brand">
+          <Nav.Link as={Link} to="/" href="/" className="navbar-brand MyNavBar__brand">
             <img src={logo} alt="logo de charles cantin" />
-          </Link>
+          </Nav.Link>
         )}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link className="MyNavBar__link nav-link" to="/">
+            <Nav.Link as={Link} className="MyNavBar__link nav-link" to="/" href="/">
               Accueil
-            </Link>
-            <Link className="MyNavBar__link nav-link" to="/Galery">
+            </Nav.Link>
+            <Nav.Link as={Link} className="MyNavBar__link nav-link" to="/Galery" href="/Galery">
               Galerie
-            </Link>
-            <Link className="MyNavBar__link nav-link" to="/Services">
+            </Nav.Link>
+            <Nav.Link as={Link} className="MyNavBar__link nav-link" to="/Services" href="/Services">
               Prestations
-            </Link>
-            <Link className="MyNavBar__link nav-link" to="/Contact">
+            </Nav.Link>
+            <Nav.Link as={Link} className="MyNavBar__link nav-link" to="/Contact" href="/Contact">
               Contact
-            </Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

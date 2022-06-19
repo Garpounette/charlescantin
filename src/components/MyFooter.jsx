@@ -8,10 +8,10 @@ function MyFooter() {
   return (
     <div className="MyFooter flux pb-2">
       <div className="MyFooter__social pt-4 pb-2">
-        <a href="https://www.facebook.com" target="_blank">
+        <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
           <img src={facebook} alt="logo facebook" />
         </a>
-        <a href="https://www.instagram.com" target="_blank">
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
           <img src={instagram} alt="logo instagram" />
         </a>
       </div>
