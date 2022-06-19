@@ -20,3 +20,5 @@ fields:
     maxSize: 64
   label: image
   description: fichier image
+pages:
+- build/images/baby1.md
