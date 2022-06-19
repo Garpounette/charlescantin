@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: ''
-  label: Prestations
+  label: Charles Cantin
   create: all
   match: "**/*"
 upload_dir: uploads
