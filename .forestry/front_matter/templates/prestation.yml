@@ -39,4 +39,5 @@ fields:
   label: Commentaire
   description: Commentaires additionnels
 pages:
+- src/datas/services/famille.md
 - src/datas/services/pourdeux.md
