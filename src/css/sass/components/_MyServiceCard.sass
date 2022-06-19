@@ -1,0 +1,27 @@
+.MyServiceCard
+  background-color: $light
+ 	border: 1px solid $dark
+  box-shadow: 1px 1px 3px $dark
+  margin: 10px  
+  text-align: center
+  width: 80%
+  +min-break-point($md)
+    width: 45%
+  +min-break-point($lg)
+    width: 30%
+  
+
+.MyServiceCard__title
+  font-size: 25px
+  font-weight: bold
+
+.MyServiceCard__subtitle
+  font-size: 25px
+
+.MyServiceCard__text
+  font-size: 18px
+
+.MyServiceCard__commentaire
+  font-size: 18px
+  font-size: smaller
+  color: lighten($dark, 15% )

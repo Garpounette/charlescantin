@@ -411,4 +411,55 @@ body {
   display: block;
   width: 75%;
 }
+
+.MyServiceList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.MyServiceCard {
+  background-color: #EEEEEE;
+  border: 1px solid #47555e;
+  -webkit-box-shadow: 1px 1px 3px #47555e;
+          box-shadow: 1px 1px 3px #47555e;
+  margin: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .MyServiceCard {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .MyServiceCard {
+    width: 30%;
+  }
+}
+
+.MyServiceCard__title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.MyServiceCard__subtitle {
+  font-size: 25px;
+}
+
+.MyServiceCard__text {
+  font-size: 18px;
+}
+
+.MyServiceCard__commentaire {
+  font-size: 18px;
+  font-size: smaller;
+  color: #687c8a;
+}
 /*# sourceMappingURL=Index.css.map */
