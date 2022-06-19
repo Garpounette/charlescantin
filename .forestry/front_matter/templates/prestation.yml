@@ -38,3 +38,5 @@ fields:
       format: markdown
   label: Commentaire
   description: Commentaire suplémentaire
+pages:
+- build/services/justemoi.md
