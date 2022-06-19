@@ -47,3 +47,5 @@ fields:
   label: ID
   description: id de la prestation
   hidden: true
+pages:
+- public/justemoi.md
