@@ -40,4 +40,5 @@ fields:
   description: Commentaires additionnels
 pages:
 - src/datas/services/famille.md
+- src/datas/services/iletaitunefois.md
 - src/datas/services/pourdeux.md
