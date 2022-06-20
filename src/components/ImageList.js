@@ -1,17 +1,17 @@
 import parseMD from "parse-md";
 
-function imageList(setImageArray, Filenames) {
+function ImageList(setImageArray, Filenames) {
   let data = [];
   const list = require.context("../datas/images", false, /^\..*\.(md)$/);
   list.keys().map((item) => data.push(list(item)));
 
-  data.map((file) => {
+  data.forEach((file) => {
     fetch(file)
       .then((r) => r.text())
       .then((fileContents) => {
         const { metadata } = parseMD(fileContents);
 
-        Filenames.map((filename) => {
+        Filenames.forEach((filename) => {
           file = metadata.file.slice(0, -4);
           if (filename.includes(file))
             setImageArray((array) => [
@@ -20,8 +20,7 @@ function imageList(setImageArray, Filenames) {
             ]);
         });
       });
-    return "";
   });
 }
 
-export default imageList;
+export default ImageList;

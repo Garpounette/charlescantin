@@ -1,18 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import MyImageItem from "./MyImageItem";
 import MyCategories from "./MyCategories";
 import MyImageModal from "./MyImageModal";
 
-import ImageList from "./ImageList";
-
-function MyImageList({ Filenames }) {
+function MyImageList({ ImageArray }) {
   const [activeCategory, setActiveCategory] = useState("");
-  const [ImageArray, setImageArray] = useState([]);
-
-  useEffect(() => {
-    ImageList(setImageArray, Filenames);
-    return setImageArray([]);
-  }, []);
 
   const categories = ImageArray.reduce(
     (acc, image) => (acc.includes(image.category) ? acc : acc.concat(image.category)),

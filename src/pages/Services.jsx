@@ -1,9 +1,9 @@
 import MyServiceList from "components/MyServiceList";
 
-function Services() {
+function Services({ ServiceArray }) {
   return (
     <div className="NavMargin">
-      <MyServiceList />
+      <MyServiceList ServiceArray={ServiceArray} />
     </div>
   );
 }

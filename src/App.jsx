@@ -12,6 +12,9 @@ import MyNavBar from "./components/MyNavBar";
 import MyFooter from "components/MyFooter";
 import ScrollToTop from "components/ScrollToTop";
 
+import ImageList from "components/ImageList";
+import ServiceList from "components/ServiceList";
+
 function App() {
   const { name, url, uri, city } = {
     name: "Charles Cantin",
@@ -21,6 +24,8 @@ function App() {
   };
   const currentPage = useLocation().pathname;
   const [Filenames, setFilenames] = useState([]);
+  const [ImageArray, setImageArray] = useState([]);
+  const [ServiceArray, setServiceArray] = useState([]);
 
   useEffect(() => {
     let data = [];
@@ -29,6 +34,15 @@ function App() {
     setFilenames([...new Set(data)]);
   }, []);
 
+  useEffect(() => {
+    ServiceList(setServiceArray);
+    return setServiceArray([]);
+  }, []);
+
+  useEffect(() => {
+    ImageList(setImageArray, Filenames);
+    return setImageArray([]);
+  }, [Filenames]);
   return (
     <>
       <header>
@@ -38,8 +52,8 @@ function App() {
         <ScrollToTop>
           <Routes>
             <Route path="/" element={<Home Filenames={Filenames} />} />
-            <Route path="/galery" element={<Galery Filenames={Filenames} />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/galery" element={<Galery ImageArray={ImageArray} />} />
+            <Route path="/services" element={<Services ServiceArray={ServiceArray} />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy name={name} url={url} uri={uri} />} />
             <Route path="/condition" element={<Condition name={name} city={city} />} />
@@ -47,7 +61,7 @@ function App() {
         </ScrollToTop>
       </main>
       <footer>
-        <MyFooter />
+        <MyFooter page={currentPage} />
       </footer>
     </>
   );

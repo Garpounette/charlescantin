@@ -1,12 +1,11 @@
-import { serviceList } from "../datas/serviceList";
 import MyServiceCard from "./MyServiceCard";
 
-function MyServiceList() {
+function MyServiceList({ ServiceArray }) {
   return (
     <div className="MyServiceList row">
-      {serviceList.map(({ id, name, price, description, commentaire }) => (
+      {ServiceArray.map(({ name, price, description, commentaire }) => (
         <MyServiceCard
-          key={id}
+          key={name + Math.random().toString(36).substr(2, 8)}
           name={name}
           price={price}
           description={description}

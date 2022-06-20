@@ -3,8 +3,7 @@ import facebook from "../assets/logos/facebook.png";
 import instagram from "../assets/logos/instagram.png";
 import { Link } from "react-router-dom";
 
-function MyFooter() {
-  //TODO : Liens sociaux + liens footer (politique + cgv)
+function MyFooter({ page }) {
   return (
     <div className="MyFooter flux pb-2">
       <div className="MyFooter__social pt-4 pb-2">
@@ -16,7 +15,9 @@ function MyFooter() {
         </a>
       </div>
       <div className="MyFooter__logo pt-2 pb-2">
-        <img src={logo} alt="" />
+        <Link to={page}>
+          <img src={logo} alt="" />
+        </Link>
       </div>
       <div className="MyFooter__copyright">© Charles Cantin 2022, Tous droits réservés.</div>
       <div className="MyFooter__links">
