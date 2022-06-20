@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 import Home from "pages/Home";
 import Galery from "pages/Galery";
@@ -45,6 +46,12 @@ function App() {
   }, [Filenames]);
   return (
     <>
+      <Helmet>
+        <meta
+          name="keywords"
+          content="Charles Cantin photographe mariage bébé baptême portrait grossesse couple famille"
+        />
+      </Helmet>
       <header>
         <MyNavBar page={currentPage} />
       </header>
