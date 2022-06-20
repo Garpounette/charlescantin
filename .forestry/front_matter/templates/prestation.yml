@@ -39,7 +39,6 @@ fields:
   label: Commentaire
   description: Commentaires additionnels
 pages:
-- src/datas/services/corporate.md
 - src/datas/services/famille.md
 - src/datas/services/iletaitunefois.md
 - src/datas/services/immortalise.md
