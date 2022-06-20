@@ -1,9 +1,24 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { useState } from "react";
 
 function MyForm() {
-  return (
-    <Form className="MyForm row" onSubmit={(e) => e.preventDefault()}>
+  const [submitting, setSubmitting] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    setTimeout(() => {
+      setSubmitting(false);
+    }, 3000);
+  };
+
+  return submitting ? (
+    <div className="MyForm__submitting">
+      Envoi du Formulaire en cours <br /> Veuillez patienter ...
+    </div>
+  ) : (
+    <Form className="MyForm row" onSubmit={handleSubmit}>
       <Form.Group className="MyForm__group">
         <Form.Label className="MyForm__label">Nom *</Form.Label>
         <Form.Control className="MyForm__control" type="text" required name="lastname" />
