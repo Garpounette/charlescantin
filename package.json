@@ -1,6 +1,6 @@
 {
   "name": "charlescantin",
-  "homepage": "http://charlescantin.localhost/",
+  "homepage": "https://charlesc.netlify.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,8 @@
     "autoprefixer": "10.4.5",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.2.0-beta1",
+    "fs": "^0.0.1-security",
+    "parse-md": "^3.0.3",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-document-meta": "^3.0.0-beta.2",

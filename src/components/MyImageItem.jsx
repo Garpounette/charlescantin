@@ -1,12 +1,12 @@
-function MyImageItem({ name, img, setModalImageSrc, setModalIsActive }) {
+function MyImageItem({ name, file, setModalImageSrc, setModalIsActive }) {
   function handleClick() {
     setModalIsActive(true);
-    setModalImageSrc(img);
+    setModalImageSrc(file);
   }
 
   return (
     <li className="MyImageItem" onClick={() => handleClick()}>
-      <img className="MyImageItem__image" src={img} alt={`${name}`} width="50%" />
+      <img className="MyImageItem__image" src={file} alt={`${name}`} width="50%" />
     </li>
   );
 }

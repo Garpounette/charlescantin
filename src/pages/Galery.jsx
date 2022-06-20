@@ -1,9 +1,9 @@
 import MyImageList from "components/MyImageList";
 
-function Galery() {
+function Galery({ Filenames }) {
   return (
     <div className="NavMargin">
-      <MyImageList />
+      <MyImageList Filenames={Filenames} />
     </div>
   );
 }

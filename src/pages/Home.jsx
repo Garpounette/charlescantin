@@ -1,10 +1,10 @@
 import MyCarousel from "components/MyCarousel";
 import MyLink from "components/MyLink";
 
-function Home() {
+function Home({ Filenames }) {
   return (
     <>
-      <MyCarousel />
+      <MyCarousel Filenames={Filenames} />
       <MyLink />
     </>
   );

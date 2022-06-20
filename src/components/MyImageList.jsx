@@ -1,18 +1,25 @@
-import { useState } from "react";
-import { imageList } from "../datas/imageList";
+import { useState, useEffect } from "react";
 import MyImageItem from "./MyImageItem";
 import MyCategories from "./MyCategories";
 import MyImageModal from "./MyImageModal";
 
-function MyImageList() {
+import ImageList from "./ImageList";
+
+function MyImageList({ Filenames }) {
   const [activeCategory, setActiveCategory] = useState("");
-  const categories = imageList.reduce(
+  const [ImageArray, setImageArray] = useState([]);
+
+  useEffect(() => {
+    ImageList(setImageArray, Filenames);
+    return setImageArray([]);
+  }, []);
+
+  const categories = ImageArray.reduce(
     (acc, image) => (acc.includes(image.category) ? acc : acc.concat(image.category)),
     []
   );
   const [modalIsActive, setModalIsActive] = useState(false);
   const [modalImageSrc, setModalImageSrc] = useState("");
-
   return (
     <div className="MyImageList">
       <MyCategories
@@ -22,11 +29,11 @@ function MyImageList() {
       />
 
       <ul className="MyImageList__list">
-        {imageList.map(({ id, name, img, category }) =>
+        {ImageArray.map(({ name, file, category }) =>
           !activeCategory || activeCategory === category ? (
-            <div key={id}>
+            <div key={name + Math.random().toString(36).substr(2, 8)}>
               <MyImageItem
-                img={img}
+                file={file}
                 name={name}
                 modalImageSrc={modalImageSrc}
                 setModalImageSrc={setModalImageSrc}
