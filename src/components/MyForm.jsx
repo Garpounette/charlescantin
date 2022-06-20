@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 
 function MyForm() {
   return (
-    <Form className="MyForm row" onSubmit={(e) => e.preventDefault()}>
+    <Form className="MyForm row" onSubmit={(e) => e.preventDefault()} netlify>
       <Form.Group className="MyForm__group">
         <Form.Label className="MyForm__label">Nom *</Form.Label>
         <Form.Control className="MyForm__control" type="text" required />
